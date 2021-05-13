@@ -1,0 +1,12 @@
+Jogo:	Escolhe uma quantidade de dados para jogar.
+	Se todos os dados tiverem a mesma face: Vítória
+	Quanto mais dados, maior o premio.
+
+Quantidade de dados: 2, 3, 4 ,5 ou 6
+
+Quantidade - Custo - Premio:
+2: Custo 2 fichas - Premio 20 fichas
+3: Custo 2 fichas - Premio 40 fichas
+4: Custo 2 fichas - Premio 80 fichas
+5: Custo 2 fichas - Premio 160 fichas
+6: Custo 2 fichas - Premio 360 fichas
