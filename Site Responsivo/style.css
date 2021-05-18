@@ -36,7 +36,7 @@ header #logo{
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    text-shadow: black 1px 1px 8px;
+    
 }
 .menu{
     flex: 1;
