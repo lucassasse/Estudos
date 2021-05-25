@@ -42,6 +42,72 @@ h2{
     font-weight: 200;
 }
 
+h4{
+    font-size: 150%;
+    font-weight: 150;
+    padding: 20px 0;
+}
+
 p, li, a{
     font-family: 'Open Sans', sans-serif;
+    color: #404040;
+}
+
+p.destaque{
+    font-size: 130%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+}
+
+/*----------------------------------*/
+/*         ELEMENTOS HEADER         */
+/*----------------------------------*/
+
+header div#chamada h1{
+    color: #FFF;
+    text-shadow: 4px 6px 8px #000;
+}
+
+header div#chamada h4{
+    font-size: 250%;
+    text-shadow: 4px 6px 8px #000;
+    margin-bottom: 55px;
+}
+
+header div#chamada a{
+    font-size: 110%;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px 80px;
+    border-radius: 50px;
+    background: linear-gradient(rgba(7,140,49,55) 0%, rgba(6,89,2,85) 50%), rgba(6,89,2,35) 100%;
+}
+
+/*----------------------------------*/
+/*     SEÇÃO - DOMINGO PERFEITO     */
+/*----------------------------------*/
+
+section div h2:after{
+    display: block;
+    background-color: #078C31;
+    height: 5px;
+    width: 8%;
+    margin: 20px auto 10px;
+    content: "  ";
+}
+
+div.pontos-chaves h4{
+    color: #404040;
+}
+
+div.pontos-chaves h4:after{
+    display: block;
+    background-color: #078C31;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: "  ";
 }
