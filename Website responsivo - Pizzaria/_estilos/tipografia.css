@@ -90,11 +90,11 @@ header div#chamada a{
 /*     SEÇÃO - DOMINGO PERFEITO     */
 /*----------------------------------*/
 
-section div h2:after{
+section h2:after{
     display: block;
     background-color: #078C31;
     height: 5px;
-    width: 8%;
+    width: 80px;
     margin: 20px auto 10px;
     content: "  ";
 }
@@ -110,4 +110,29 @@ div.pontos-chaves h4:after{
     width: 30%;
     margin: 20px auto 10px;
     content: "  ";
+}
+
+/*----------------------------------*/
+/*          SEÇÃO - PIZZA           */
+/*----------------------------------*/
+
+section#pizza p.destaque{
+    color: #FFF;
+    width: 45%;
+}
+
+section#pizza ul li{
+    color: #FFF;
+    list-style: none;
+    line-height: 1.9;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+/*----------------------------------*/
+/*       SEÇÃO - DEPOIMENTOS        */
+/*----------------------------------*/
+
+section#testemunha p.destaque{
+    width: 45%;
 }
