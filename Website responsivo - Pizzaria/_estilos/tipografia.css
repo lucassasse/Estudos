@@ -166,3 +166,18 @@ section#plano-principal div.planos-bottom p{
     text-align: center;
     padding: 35px;
 }
+
+/*----------------------------------*/
+/*         SEÇÃO - FOOTER           */
+/*----------------------------------*/
+
+footer div#info ul{
+    margin-left: 15px;
+    margin-bottom: 80px;
+}
+
+footer div#info li{
+    list-style: none;
+    color: #FFF;
+    margin-bottom: 5px;
+}
