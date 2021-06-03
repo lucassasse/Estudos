@@ -1,4 +1,14 @@
 /*
+div#teste{
+    background-color: aquamarine;
+    position: fixed;
+    top: 0; left: 0;
+    width: 300px;
+    height: 60px;
+    z-index: 10;
+    color: #000;
+}
+
 CORES
 VERDE ESCURO: #065902
 VERDE CLARO: #078C31
@@ -329,4 +339,83 @@ section#testemunha div#testemunha-centro div#testemunhos ul img{
     margin-top: -80px;
     margin-bottom: 20px;
     border: 5px solid #F03733;
+}
+
+/*----------------------------------*/
+/*       SEÇÃO - TRANSIÇÃO 1        */
+/*----------------------------------*/
+
+div#transicao-testemunha-plano{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div#transicao-testemunha-plano #decoracao1{
+    width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-tomate-manjericao-alho.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+div#transicao-testemunha-plano #decoracao2{
+    width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-azeite.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+div#transicao-testemunha-plano #decoracao3{
+    width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-detalhe-tomate.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/*----------------------------------*/
+/*         SEÇÃO - PLANOS           */
+/*----------------------------------*/
+
+section#plano-principal{
+    width: 100%;
+    padding: 40px 0 80px;
+}
+
+div#planos-janela{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.planos{
+    width: 250px;
+    height: 450px;
+    margin: 80px 30px;
+}
+
+div.planos-top{
+    width: 250px;
+    height: 350px;
+    background-color: #F7F7F7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+div.planos-bottom{
+    width: 250px;
+    height: 100px;
+    background-color: #078c31;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 3px #ccc;
+    cursor: pointer;
 }

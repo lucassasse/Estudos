@@ -135,4 +135,34 @@ section#pizza ul li{
 
 section#testemunha p.destaque{
     width: 45%;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 50px;
+}
+
+/*----------------------------------*/
+/*         SEÇÃO - PLANOS           */
+/*----------------------------------*/
+
+section#plano-principal h4{
+    color: #D90404;
+}
+
+section#plano-principal ul {
+    margin-top: 25px;
+}
+
+section#plano-principal ul li {
+    font-size: 85%;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 2;
+    text-decoration: none;
+}
+
+section#plano-principal div.planos-bottom p{
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px;
 }
