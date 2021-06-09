@@ -68,12 +68,22 @@ p.destaque{
 header div#chamada h1{
     color: #FFF;
     text-shadow: 4px 6px 8px #000;
+
+    animation-name: headerH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
 header div#chamada h4{
     font-size: 250%;
     text-shadow: 4px 6px 8px #000;
     margin-bottom: 55px;
+
+    animation-name: headerH4-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
 }
 
 header div#chamada a{
@@ -84,6 +94,13 @@ header div#chamada a{
     padding: 20px 80px;
     border-radius: 50px;
     background: linear-gradient(rgba(7,140,49,55) 0%, rgba(6,89,2,85) 50%), rgba(6,89,2,35) 100%;
+
+    display: inline-block;
+    animation-name: headerA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
 }
 
 /*----------------------------------*/
@@ -119,6 +136,7 @@ div.pontos-chaves h4:after{
 section#pizza p.destaque{
     color: #FFF;
     width: 45%;
+    opacity: 0;
 }
 
 section#pizza ul li{
