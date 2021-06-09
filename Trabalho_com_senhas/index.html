@@ -8,52 +8,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Estudo de Senhas</h1>
-<hr>
-<h2>Inputs <i>type="password"</i></h2>
-<p>Cadastre sua senha:</p>
-<input type="password" id='cadastroSenha' placeholder='Senha...'>
-<button onclick='capturarSenha()'>Cadastrar</button>
-<br><br>
-<p>Você se lembra de sua senha?</p>
-<input type="password" id='testeSenha' placeholder='Senha...'>
-<button onclick='testarSenha()'>Testar</button>
-<hr>
-<h2>Inputs <i>type="button"</i></h2>
-<p>Cadastre sua senha:</p>
-<div class='container'>
-    <input type="button" value='1' onclick='numero(this)'>
-    <input type="button" value='2' onclick='numero(this)'>
-    <input type="button" value='3' onclick='numero(this)'>
-    <input type="button" value='4' onclick='numero(this)'>
-    <input type="button" value='5' onclick='numero(this)'>
-    <input type="button" value='6' onclick='numero(this)'>
-    <input type="button" value='7' onclick='numero(this)'>
-    <input type="button" value='8' onclick='numero(this)'>
-    <input type="button" value='9' onclick='numero(this)'>
-    <input type="button" value='0' onclick='numero(this)'>
-</div><br>
-<p id='otpText01'>*****</p>
-<button onclick='limparSenha()'>Cancelar/ Esquecer</button>
-<button onclick='cadastrarSenha()'>Cadastrar</button> <br>
-<hr class='hrPequeno'>
-<p id='paragrafoMeio'>Você se lembra de sua senha?</p>
-<div class='container'>
-    <input type="button" value='1' onclick='numero2(this)'>
-    <input type="button" value='2' onclick='numero2(this)'>
-    <input type="button" value='3' onclick='numero2(this)'>
-    <input type="button" value='4' onclick='numero2(this)'>
-    <input type="button" value='5' onclick='numero2(this)'>
-    <input type="button" value='6' onclick='numero2(this)'>
-    <input type="button" value='7' onclick='numero2(this)'>
-    <input type="button" value='8' onclick='numero2(this)'>
-    <input type="button" value='9' onclick='numero2(this)'>
-    <input type="button" value='0' onclick='numero2(this)'>
-</div>
-<p id='otpText02'>*****</p>
-<button onclick='limparSenha2()'>Cancelar</button>
-<button onclick='testarSenha2()'>Testar</button>
-<hr>
+
+    <main>
+        <div id="div1">
+            <h2>Inputs <i>type="password"</i></h2>
+            <p>Cadastre sua senha:</p>
+            <input type="password" id='cadastroSenha' placeholder='Senha...'>
+            <button onclick='capturarSenha()'>Cadastrar</button>
+            <br><br>
+            <p>Você se lembra de sua senha?</p>
+            <input type="password" id='testeSenha' placeholder='Senha...'>
+            <button onclick='testarSenha()'>Testar</button>
+        </div>
+
+        <div id="div2">
+            <h2>Inputs <i>type="button"</i></h2>
+            <p>Cadastre sua senha:</p>
+            <div class='container'>
+                <input type="button" value='1' onclick='numero(this)'>
+                <input type="button" value='2' onclick='numero(this)'>
+                <input type="button" value='3' onclick='numero(this)'>
+                <input type="button" value='4' onclick='numero(this)'>
+                <input type="button" value='5' onclick='numero(this)'>
+                <input type="button" value='6' onclick='numero(this)'>
+                <input type="button" value='7' onclick='numero(this)'>
+                <input type="button" value='8' onclick='numero(this)'>
+                <input type="button" value='9' onclick='numero(this)'>
+                <input type="button" value='0' onclick='numero(this)'>
+            </div><br>
+            <p id='otpText01'>*****</p>
+            <button onclick='limparSenha()'>Cancelar/ Esquecer</button>
+            <button onclick='cadastrarSenha()'>Cadastrar</button> <br>
+
+            <p id='paragrafoMeio'>Você se lembra de sua senha?</p>
+            <div class='container'>
+                <input type="button" value='1' onclick='numero2(this)'>
+                <input type="button" value='2' onclick='numero2(this)'>
+                <input type="button" value='3' onclick='numero2(this)'>
+                <input type="button" value='4' onclick='numero2(this)'>
+                <input type="button" value='5' onclick='numero2(this)'>
+                <input type="button" value='6' onclick='numero2(this)'>
+                <input type="button" value='7' onclick='numero2(this)'>
+                <input type="button" value='8' onclick='numero2(this)'>
+                <input type="button" value='9' onclick='numero2(this)'>
+                <input type="button" value='0' onclick='numero2(this)'>
+            </div>
+            <p id='otpText02'>*****</p>
+            <button onclick='limparSenha2()'>Cancelar</button>
+            <button onclick='testarSenha2()'>Testar</button>
+        </div>
+    </main>
+
+
 </body>
 <script src="script.js"></script>
 </html>

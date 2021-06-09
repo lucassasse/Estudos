@@ -22,13 +22,14 @@ function testarSenha(){
 var senha = []
 var senhaSalva = []
 var senha2 = []
+var senhaZerada = []
 var exibir = document.getElementById('otpText01')
 var exibir2 = document.getElementById('otpText02')
 var resultadoTeste = 'false'
 
 function numero(valor){
   let caracter = parseInt(valor.value)
-  let adicionar = senha.push(caracter)
+  senha.push(caracter)
   exibirSenha()
 }
 
@@ -46,12 +47,12 @@ function cadastrarSenha(){
   alert('Senha cadastrada')
   senhaSalva = senha
   senha = []
-  //exibir.innerHTML = `<p id='iptText'>*****</p>`
+  exibir.innerHTML = `<p id='iptText'>*****</p>`
 }
 
 function numero2(valor){
   let caracter = parseInt(valor.value)
-  let adicionar = senha2.push(caracter)
+  senha2.push(caracter)
   exibirSenha2()
 }
 
