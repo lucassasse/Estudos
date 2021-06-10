@@ -1,17 +1,16 @@
-/*
-now = new Date
-
-var getDay = now.getDay()//captura o dia da semana. 0 = domingo (0 a 7 = array)
-var getDate = now.getDate() //captura o dia atual
-var getMouth = now.getMonth()//captura o mês atual. 0 = janeiro (0 a 12 = array)
-var getFullYear = now.getFullYear()//captura o ano atual
-
-document.getElementById("txt").innerHTML = getDay + " " + getDate + " "  + getMouth + " " + getFullYear
-*/
+function verificarData(){
+    const valor = document.getElementById("date").value
 
 
-var valor = document.getElementById("date").value
-
-function VerificarEstacao(){
     console.log(valor)
+
+    dataAtual()
+}
+
+function dataAtual(){
+    const data = new Date()
+    const diaAtual = data.getDate()
+    const mesAtual = data.getMonth()+1
+    console.log(diaAtual)
+    console.log(mesAtual)
 }
