@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        p#numeroAdicionar::before, p#textoAdicionar::before{
+            content: "Resultado: ";
+        }
+
+        p#numeroAdicionar, p#textoAdicionar{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudo do Local Storage</h1>
+    <p>Exercício proposto 1: Adicionar um botão e, ao clicar, acessar um valor do Local Storage e somar 1 a este valor.</p>
+    <p>Exercício proposto 2: Adicionar um input type text e, ao enviar o valor, tal valor deve ser salvo no Local Storage e, ao clicar em outro botão, este valor deve ser retornado.</p>
+    <p>Exercício proposto 3: Criar um botão para remover os valores</p>
+    <br><hr>
+    <h2>Exercício 01:</h2>
+    <button id="adicionar" onclick="adicionarNumero()">Adicionar +1</button>
+    <p id="numeroAdicionar"></p>
+    <br><hr>
+    <h2>Exercício 02:</h2>
+    <label for="text">Adicione um texto:</label>
+    <input type="text" id="textoEnviado">
+    <button id="enviar" onclick="capturarTexto()">Enviar</button>
+    <br><br>
+    <button onclick="ResgatarTexto()">Exibir:</button>
+    <p id="textoAdicionar"></p>
+    <br><hr>
+    <h2>Exercício 03:</h2>
+    <button onclick="limparValores()">Limpar valores</button>
+</body>
+<script src="index.js"></script>
+</html>
