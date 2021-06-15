@@ -72,6 +72,13 @@ $('div#testemunhos ul:eq(2)').css('opacity', 0)
 
 $('section#domingo-perfeito').waypoint(function(direcao){
     if(direcao == "down"){
+        $('div.folha1').removeClass('animate__animated animate__fadeOutUp')
+        $('div.folha3').removeClass('animate__animated animate__fadeOutUp')
+        $('div.camarao').removeClass('animate__animated animate__fadeOutUp animate__slow')
+        $('div.tomate').removeClass('animate__animated animate__fadeOutUp animate__slow')
+        $('div.folha2').removeClass('animate__animated animate__fadeOutUp animate__slower')
+        $('div.queijo').removeClass('animate__animated animate__fadeOutUp animate__slower')
+
         $('div.folha1').addClass('animate__animated animate__fadeInUp')
         $('div.folha3').addClass('animate__animated animate__fadeInUp')
         $('div.camarao').addClass('animate__animated animate__fadeInUp animate__slow')
@@ -81,12 +88,12 @@ $('section#domingo-perfeito').waypoint(function(direcao){
     }
     
     if(direcao == "up"){
-        $('div.folha1').removeClass('animate__animated animate__fadeInUp')
-        $('div.folha3').removeClass('animate__animated animate__fadeInUp')
-        $('div.camarao').removeClass('animate__animated animate__fadeInUp animate__slow')
-        $('div.tomate').removeClass('animate__animated animate__fadeInUp animate__slow')
-        $('div.folha2').removeClass('animate__animated animate__fadeInUp animate__slower')
-        $('div.queijo').removeClass('animate__animated animate__fadeInUp animate__slower')
+        $('div.folha1').addClass('animate__animated animate__fadeOutUp')
+        $('div.folha3').addClass('animate__animated animate__fadeOutUp')
+        $('div.camarao').addClass('animate__animated animate__fadeOutUp animate__slow')
+        $('div.tomate').addClass('animate__animated animate__fadeOutUp animate__slow')
+        $('div.folha2').addClass('animate__animated animate__fadeOutUp animate__slower')
+        $('div.queijo').addClass('animate__animated animate__fadeOutUp animate__slower')
     }
     
 },{
@@ -95,12 +102,15 @@ $('section#domingo-perfeito').waypoint(function(direcao){
 
 $('section#pizza').waypoint(function(direcao){
     if(direcao == "down"){
+        $('section#pizza p').removeClass('animate__animated animate__fadeOutUp')
+        $('section#pizza div.pizza-opcoes').removeClass('animate__animated animate__fadeOutUp animate__slow')
+
         $('section#pizza p').addClass('animate__animated animate__fadeInUp')
         $('section#pizza div.pizza-opcoes').addClass('animate__animated animate__fadeInUp animate__slow')
     }
     if(direcao == "up"){
-        $('section#pizza p').removeClass('animate__animated animate__fadeInUp')
-        $('section#pizza div.pizza-opcoes').removeClass('animate__animated animate__fadeInUp animate__slow')
+        $('section#pizza p').addClass('animate__animated animate__fadeOutUp')
+        $('section#pizza div.pizza-opcoes').addClass('animate__animated animate__fadeOutUp animate__slow')
     }
 },{
     offset:'450px;'
@@ -108,16 +118,115 @@ $('section#pizza').waypoint(function(direcao){
 
 $('section#testemunha').waypoint(function(direcao) {
     if(direcao == 'down'){
+        $('div#testemunhos ul:eq(0)').removeClass('animate__animated animate__fadeOutUp animate__slower')
+        $('div#testemunhos ul:eq(1)').removeClass('animate__animated animate__fadeOutUp animate__slow')
+        $('div#testemunhos ul:eq(2)').removeClass('animate__animated animate__fadeOutUp animate__slower')
+
         $('div#testemunhos ul:eq(0)').addClass('animate__animated animate__fadeInUp animate__slower')
         $('div#testemunhos ul:eq(1)').addClass('animate__animated animate__fadeInUp animate__slow')
         $('div#testemunhos ul:eq(2)').addClass('animate__animated animate__fadeInUp animate__slower')
     }
     
     if(direcao == 'up'){
-        $('div#testemunhos ul:eq(0)').removeClass('animate__animated animate__fadeInUp animate__slower')
-        $('div#testemunhos ul:eq(1)').removeClass('animate__animated animate__fadeInUp animate__slow')
-        $('div#testemunhos ul:eq(2)').removeClass('animate__animated animate__fadeInUp animate__slower')
+        $('div#testemunhos ul:eq(0)').addClass('animate__animated animate__fadeOutUp animate__slower')
+        $('div#testemunhos ul:eq(1)').addClass('animate__animated animate__fadeOutUp animate__slow')
+        $('div#testemunhos ul:eq(2)').addClass('animate__animated animate__fadeOutUp animate__slower')
     }
 }, {
     offset: '400px;'
+})
+
+$('div#transicao-testemunha-plano').waypoint(function(direcao){
+    if (direcao == 'down'){
+        $('div#decoracao1').removeClass('animate__animated animate__fadeOutLeft animate__slow')
+        $('div#decoracao2').removeClass('animate__animated animate__fadeOut animate__slow')
+        $('div#decoracao3').removeClass('animate__animated animate__fadeOutRight animate__slow')
+
+        $('div#decoracao1').addClass('animate__animated animate__fadeInLeft animate__slow')
+        $('div#decoracao2').addClass('animate__animated animate__fadeIn animate__slow')
+        $('div#decoracao3').addClass('animate__animated animate__fadeInRight animate__slow')
+    } else {
+        $('div#decoracao1').addClass('animate__animated animate__fadeOutLeft animate__slow')
+        $('div#decoracao2').addClass('animate__animated animate__fadeOut animate__slow')
+        $('div#decoracao3').addClass('animate__animated animate__fadeOutRight animate__slow')
+    }
+}, {
+    offset:'800px;'
+})
+
+$('section#plano-principal').waypoint(function(direcao){
+    if(direcao == 'down'){
+        $('div.planos:eq(0)').removeClass('animate__animated animate__fadeOutLeft animate__slower')
+        $('div.planos:eq(1)').removeClass('animate__animated animate__fadeOutUp animate__slow')
+        $('div.planos:eq(2)').removeClass('animate__animated animate__fadeOutRight animate__slower')
+
+        $('div.planos:eq(0)').addClass('animate__animated animate__fadeInLeft animate__slower')
+        $('div.planos:eq(1)').addClass('animate__animated animate__fadeInUp animate__slow')
+        $('div.planos:eq(2)').addClass('animate__animated animate__fadeInRight animate__slower')
+    } else{
+        $('div.planos:eq(0)').addClass('animate__animated animate__fadeOutLeft animate__slower')
+        $('div.planos:eq(1)').addClass('animate__animated animate__fadeOutUp animate__slow')
+        $('div.planos:eq(2)').addClass('animate__animated animate__fadeOutRight animate__slower')
+    }
+},{
+    offset:'500px;'
+})
+
+$('footer').waypoint(function(direcao){
+    if(direcao == 'down'){
+        $('div#mapa').removeClass('animate__animated animate__fadeOut')
+        $('div#info').removeClass('animate__animated animate__fadeOut')
+        $('div#pizza-rodape-decoracao').removeClass('animate__animated animate__fadeOut')
+        
+        $('div#mapa').addClass('animate__animated animate__fadeIn')
+        $('div#info').addClass('animate__animated animate__fadeIn')
+        $('div#pizza-rodape-decoracao').addClass('animate__animated animate__fadeIn')
+    } else{
+        $('div#mapa').addClass('animate__animated animate__fadeOut')
+        $('div#info').addClass('animate__animated animate__fadeOut')
+        $('div#pizza-rodape-decoracao').addClass('animate__animated animate__fadeOut')
+    }
+}, {
+    offset:'650px;'
+})
+
+$('header h1').waypoint(function(direcao){
+    if(direcao == 'down'){
+        $('nav').addClass('navEstatico')
+        $('nav div').addClass('logoEstatico')
+        $('nav ul').addClass('menuEstatico')
+        $('nav ul li a').addClass('itemEstatico')
+        $('nav ion-icon').addClass('iconeEstatico')
+    } else{
+        $('nav').removeClass('navEstatico')
+        $('nav div').removeClass('logoEstatico')
+        $('nav ul').removeClass('menuEstatico')
+        $('nav ul li a').removeClass('itemEstatico')
+        $('nav ion-icon').removeClass('iconeEstatico')
+    }
+    
+},{
+    offset: '200px;'
+})
+
+//Ações de navegação
+
+$('nav div').click(function(){
+    $('html,body').animate({scrollTop:$('header').offset().top},1000)
+})
+
+$('nav ul li:eq(0)').click(function(){
+    $('html,body').animate({scrollTop:$('section#domingo-perfeito').offset().top},1000)
+})
+
+$('nav ul li:eq(1)').click(function(){
+    $('html,body').animate({scrollTop:$('section#pizza').offset().top},1000)
+})
+
+$('nav ul li:eq(2)').click(function(){
+    $('html,body').animate({scrollTop:$('section#testemunha').offset().top},1000)
+})
+
+$('nav ul li:eq(3)').click(function(){
+    $('html,body').animate({scrollTop:$('section#plano-principal').offset().top},1000)
 })
