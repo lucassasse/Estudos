@@ -1,57 +1,25 @@
-var dados = []
+let resultado = document.getElementById('valor')
+let dados = []
 
-function calculo(){
-    var valor = Math.random() * (6 - 1) + 1
-    valor = Math.round(valor)
-    return valor
+function gerarNumeros(){
+    let resultado = Math.random() * (6 - 1) + 1
+    valor = Math.round(resultado)
+    dados.push(valor)
 }
 
-function pushArray(){
-    dados.push(calculo())
+function quantidadeDados(valor){
+    let caracter = parseInt(valor.value)
+    limparArray()
+    for(let i = caracter; i > 0; i--){
+        gerarNumeros()
+    }
+    imprimir()
 }
 
-function clearArray(){
+function imprimir(){
+resultado.innerHTML = dados
+}
+
+function limparArray(){
     dados = []
-}
-
-function jogar2(){
-    clearArray()
-    for(var i = 0; i < 2; i++){
-        calculo()
-        pushArray()
-    }
-    alert(dados)
-}
-
-function jogar3(){
-    clearArray()
-    for(var i = 0; i < 3; i++){
-        calculo()
-        pushArray()
-    }
-}
-
-function jogar4(){
-    clearArray()
-    for(var i = 0; i < 4; i++){
-        calculo()
-        pushArray()
-    }
-}
-
-function jogar5(){
-    clearArray()
-    for(var i = 0; i < 5; i++){
-        calculo()
-        pushArray()
-    }
-}
-
-function jogar6(){
-    clearArray()
-    for(var i = 0; i < 6; i++){
-        calculo()
-        pushArray()
-    }
-    alert(dados)
 }
