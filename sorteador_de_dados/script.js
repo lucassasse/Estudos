@@ -1,5 +1,5 @@
 let resultado = document.getElementById('valor')
-let listaImagens = document.getElementById('li')
+let listaImagens = document.querySelector('li')
 let dados = []
 let imagens = [
     'Imagens/dado01.png',
@@ -27,9 +27,16 @@ function quantidadeDados(valor){
 
 function imprimir(){
 resultado.innerHTML = dados
-
 }
 
 function limparArray(){
     dados = []
 }
+
+/*
+listaImagens.innerHTML = ''
+let resultado = `<li style='list-style:none'><img src="${dados[i]}" alt="imgDado"></li>`
+let li = document.createElement('li')
+li.innerHTML = resultado
+listaImagens.append(li)
+*/
