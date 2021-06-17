@@ -68,7 +68,6 @@ p.destaque{
 header div#chamada h1{
     color: #FFF;
     text-shadow: 4px 6px 8px #000;
-
     animation-name: headerH1-moverParaDireita;
     animation-duration: 2s;
     animation-timing-function: ease-out;

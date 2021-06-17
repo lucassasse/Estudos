@@ -56,6 +56,10 @@ div#testemunha-esquerda, div#testemunha-direita{
     display: none;
 }
 
+section#testemunha div#testemunha-centro div#testemunhos ul p{
+    margin: auto;
+}
+
 /*TRANSIÇÃO*/
 
 div#transicao-testemunha-plano{

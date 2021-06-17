@@ -90,6 +90,11 @@ nav ul#esquerda{
     float: left;
 }
 
+nav ul#icone-menu-mobile{
+    float: right;
+    display: none;
+}
+
 nav ul#direita{
     float: right;
 }
@@ -119,7 +124,6 @@ nav ul li a#criar-conta{
 
 nav ul li a:hover{
     background-color: #F2B705;
-
     transition-duration: 0.7s;
 }
 
@@ -372,7 +376,7 @@ section#testemunha div#testemunha-centro div#testemunhos ul h5{
 }
 
 section#testemunha div#testemunha-centro div#testemunhos ul p{
-    line-height: 1.5;
+    line-height: 1.5em;
     color: #404040;
     font-size: 90%;
 }
@@ -429,6 +433,7 @@ div#transicao-testemunha-plano div#decoracao3{
 
 section#plano-principal{
     width: 100%;
+    height: 800px;
 }
 
 div#planos-janela{
@@ -466,6 +471,15 @@ div.planos-bottom{
     cursor: pointer;
 }
 
+div.planos-top p{
+    margin: auto;
+    padding-top: 10px;
+}
+
+div.planos-bottom p{
+    margin: auto;
+}
+
 /*----------------------------------*/
 /*         SEÇÃO - FOOTER           */
 /*----------------------------------*/
@@ -497,6 +511,11 @@ footer div#mapa{
     background-color: white;
     box-shadow: 0px 3px 10px #404040;
     opacity: 0;
+}
+
+footer div#mapa iframe{
+    width: 100%;
+    height: 100%;
 }
 
 footer div#info{
