@@ -18,6 +18,7 @@ function gerarNumeros(){
 
 function quantidadeDados(valor){
     limparArray()
+    listaImagens.innerHTML = ''
     let caracter = parseInt(valor.value)
     for(let i = caracter; i > 0; i--){
         gerarNumeros()
@@ -26,17 +27,15 @@ function quantidadeDados(valor){
 }
 
 function imprimir(){
-resultado.innerHTML = dados
+    for(let i = 0; i < dados.length; i++){
+        let resultadoFim = `<li style='list-style:none'><img src="${imagens[dados[i]-1]}" alt="imgDado"></li>`
+        console.log(dados[i])
+        let li = document.createElement('li')
+        li.innerHTML = resultadoFim
+        listaImagens.append(li)
+    }
 }
 
 function limparArray(){
     dados = []
 }
-
-/*
-listaImagens.innerHTML = ''
-let resultado = `<li style='list-style:none'><img src="${dados[i]}" alt="imgDado"></li>`
-let li = document.createElement('li')
-li.innerHTML = resultado
-listaImagens.append(li)
-*/
