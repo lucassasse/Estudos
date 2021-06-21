@@ -31,11 +31,16 @@ let resultadoTexto = document.getElementById('textoAdicionar')
 function capturarTexto(){
     let valorTexto = document.getElementById('textoEnviado').value
     window.localStorage.setItem('texto', valorTexto)
+    limparCaixaTexto()
 }
 
 function ResgatarTexto(){
     let texto = window.localStorage.getItem('texto')
     resultadoTexto.innerHTML = texto
+}
+
+function limparCaixaTexto(){
+    textoEnviado.value = ''
 }
 
 
