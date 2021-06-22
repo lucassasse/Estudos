@@ -36,3 +36,7 @@ button:active{
 img{
     width: 78.5px;
 }
+
+p{
+    font-weight: bold;
+}

@@ -1,5 +1,6 @@
 let resultado = document.getElementById('valor')
 let listaImagens = document.querySelector('li')
+let textoResultado = document.querySelector('p')
 let dados = []
 let imagens = [
     'Imagens/dado01.png',
@@ -33,6 +34,18 @@ function imprimir(){
         let li = document.createElement('li')
         li.innerHTML = resultadoFim
         listaImagens.append(li)
+    }
+    verificaResultado()
+}
+
+function verificaResultado(){
+    for(let i = 0; i < dados.length; i++){
+        if(dados[i] !== dados[0]){
+            textoResultado.innerHTML = `Lamento, você perdeu!`
+            break
+        } else{
+            textoResultado.innerHTML = `Parabéns, você ganhou!`
+        }
     }
 }
 
