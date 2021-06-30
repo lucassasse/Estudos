@@ -149,28 +149,28 @@ div#atuacao h2{
     margin: 3rem;
 }
 
-div div.campo{
+div#atuacao div.campo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-div div.campo div{
+div#atuacao div.campo div{
     border: 1px solid var(--light-yellow);
     border-radius: 2px;
     text-align: center;
     width: 15rem;
     height: 20rem;
-    margin: 3rem;
+    margin: 2.5vw;
 }
 
-div div.campo div ion-icon{
+div#atuacao div.campo div ion-icon{
     width: 2rem;
     height: 2rem;
     padding: 1rem 1rem .5rem 1rem;
 }
 
-div div.campo div h4{
+div#atuacao div.campo div h4{
     margin-bottom: 2.5rem;
 }
 
@@ -182,5 +182,47 @@ div#profissionais{
     background: var(--light-yellow);
     font-family: 'Lato', sans-serif;
     color: var(--brown);
-    height: 100vh;
+}
+
+div#profissionais div#socios p, div#funcionarios p{
+    
+}
+
+div#profissionais div#titulo-socios h2, div#titulo-funcionarios h2{
+    
+}
+
+div#profissionais div#titulo-socios div#linha, div#titulo-funcionarios div#linha{
+    
+}
+
+div#profissionais div#socios{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div#profissionais div#socios div#socio01, div#socio02{
+    padding: 3rem;
+}
+
+div#profissionais div#socios div img{
+    width: 20vw;
+}
+
+div#profissionais div#funcionarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+div#profissionais div#funcionarios div{
+    padding: 1rem;
+}
+
+div#profissionais div#funcionarios div img{
+    width: 15vw;
 }
