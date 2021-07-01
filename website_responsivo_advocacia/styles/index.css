@@ -184,16 +184,21 @@ div#profissionais{
     color: var(--brown);
 }
 
-div#profissionais div#socios p, div#funcionarios p{
-    
+div#profissionais p.nome{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
 
-div#profissionais div#titulo-socios h2, div#titulo-funcionarios h2{
-    
+div#profissionais div#funcionarios div{
+    margin-bottom: 3rem;
 }
 
-div#profissionais div#titulo-socios div#linha, div#titulo-funcionarios div#linha{
-    
+div#profissionais div#titulo-socios h2,
+div#titulo-funcionarios h2{
+    font-size: 3.5rem;
+    margin: 5vw 5vw 3.2rem 5vw;
+    border-bottom: 4px solid var(--brown);
 }
 
 div#profissionais div#socios{
@@ -203,11 +208,12 @@ div#profissionais div#socios{
 }
 
 div#profissionais div#socios div#socio01, div#socio02{
-    padding: 3rem;
+    padding: 2.5rem 2.5rem 0 2.5rem;
 }
 
 div#profissionais div#socios div img{
     width: 20vw;
+    border-radius: 3px;
 }
 
 div#profissionais div#funcionarios{
@@ -225,4 +231,5 @@ div#profissionais div#funcionarios div{
 
 div#profissionais div#funcionarios div img{
     width: 15vw;
+    border-radius: 3px;
 }
