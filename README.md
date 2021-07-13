@@ -63,6 +63,11 @@ A aplicação simula uma tabela de classificação de times de futebol. O usuár
 
 Aplicação desenvolvida para fortalecer conhecimentos em relação a manipulação DOM e listas, onde o usuário seleciona um número e calcula. O resultado será sempre a tabuada de 10x vezes o número selecionado pelo usuário.
 
+- **to-do-MERN:**
+
+A aplicação trata-se de uma lista TO DO, onde o usuário pode inserir, remover e atualizar tarefas. Ainda há a possibilidade de verificar todas as tarefas marcadas como concluidas.
+Desenvolvida a partir de toturial, com intúito de praticar a stack MERN (MongoDB, Express, React e Node).
+
 - **verificador_de_horas:**
 
 Aplicação simples, onde o usuário não interage, contudo, a ele é exibido qual o horário atual e, de acordo com o período do dia, a imagem exibida em conjunto com o horário, será diferente.
