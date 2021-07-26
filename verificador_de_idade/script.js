@@ -5,7 +5,7 @@ function verificar(){
     var res = document.getElementById('res')
 
     if (fAno.value.length == 0 || fAno.value > ano) {
-        //window.alert('[ERRO] Verifique os dados e tente novamente!')
+        window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
         var fGen = document.getElementsByName('radGen')
         var idade = ano - Number(fAno.value)
