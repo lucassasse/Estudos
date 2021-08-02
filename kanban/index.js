@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 let areas = {
     a: null,
     b: null,
