@@ -63,9 +63,21 @@ A aplicação simula uma tabela de classificação de times de futebol. O usuár
 
 Aplicação desenvolvida para fortalecer conhecimentos em relação a manipulação DOM e listas, onde o usuário seleciona um número e calcula. O resultado será sempre a tabuada de 10x vezes o número selecionado pelo usuário.
 
+- **torre_de_hanoi:**
+
+Aplicação/ jogo desenvolvido com o intuito de estudar o conceito de arrastar em HTML e JavaScrip (draggable), além de treinar a lógica.
+
+O jogo "Torre de Hanói", consiste em passar todos os discos de um torre para outra torre, ordenados do maior para o menor. Ainda, um disco menor nunca pode ficar abaixo de um disco maior na mesma torre.
+
+- **verificador_de_cep:**
+
+Aplicação criada com intuito de estudar o consumo de uma API externa.
+
+Neste caso, fora utilizada a API ViaCep, onde o usuário informa o CEP no campo apropriado e, ao confirmar, obtém o endereço correspondente ao mesmo.
+
 - **verificador_de_horas:**
 
-Aplicação simples, onde o usuário não interage, contudo, a ele é exibido qual o horário atual e, de acordo com o período do dia, a imagem exibida em conjunto com o horário, será diferente.
+Aplicação onde o usuário não interage, contudo, a ele é exibido qual o horário atual e, de acordo com o período do dia, a imagem exibida em conjunto com o horário, será diferente.
 
 - **verificador_de_idade:**
 

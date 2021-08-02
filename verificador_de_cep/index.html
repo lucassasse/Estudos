@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulte seu CEP</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Consulte seu CEP</h1>
+        <input type="number" id="inputCEP" placeholder="12345-678...">
+        <button onclick="consultarCEP()" id="btnBuscar">Buscar</button>
+    </div>
+    <div>
+        <input type="text" id="rua" readonly placeholder="Rua...">
+        <input type="text" id="bairro" readonly placeholder="Bairro...">
+        <input type="text" id="cidade" readonly placeholder="Cidade...">
+        <input type="text" id="estado" readonly placeholder="Estado...">
+    </div>
+</body>
+</html>
