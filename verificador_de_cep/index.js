@@ -13,10 +13,12 @@ inputCEP.addEventListener('keypress', function (e) {
 
 function consultarCEP(){
     let url = `https://viacep.com.br/ws/${inputCEP.value}/json/`;
-    fetch(url).then(response =>{
-        return response.json();
-    })
-    .then(data => atribuirCampos(data));
+
+    fetch(url)
+        .then(response => { return response.json() })
+        .then(data => atribuirCampos(data))
+        .catch(() => { alert("Ops, alguma coisa estranha aconteceu. Tente novamente!") })
+        
     inputCEP.value = "";
     inputCEP.focus();
 }
