@@ -69,6 +69,8 @@ Aplicação/ jogo desenvolvido com o intuito de estudar o conceito de arrastar e
 
 O jogo "Torre de Hanói", consiste em passar todos os discos de um torre para outra torre, ordenados do maior para o menor. Ainda, um disco menor nunca pode ficar abaixo de um disco maior na mesma torre.
 
+---Em desenvolvimento.
+
 - **verificador_de_cep:**
 
 Aplicação criada com intuito de estudar o consumo de uma API externa.
@@ -82,12 +84,6 @@ Aplicação onde o usuário não interage, contudo, a ele é exibido qual o hor�
 - **verificador_de_idade:**
 
 Aplicação onde o usuário digite qual seu ano de nascimento e qual seu gênero. De acodo com as respostas, a resposta da idade será exibida junto a uma imagem, que será diferente, levando em consideração o gênero e a idade em conjunto.
-
-- **website_responsivo_advocacia:**
-
-Em desenvolvimento...
-
-Website responsivo de um escritório de advocacía fictício, desenvolvido de maneira autônoma, para fixação de conhecimentos relacionados ao desenvolvimento frontend.
 
 - **website_responsivo_pizzaria:**
 
