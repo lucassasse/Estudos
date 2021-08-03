@@ -30,7 +30,6 @@ function quantidadeDados(valor){
 function imprimir(){
     for(let i = 0; i < dados.length; i++){
         let resultadoFim = `<li style='list-style:none'><img src="${imagens[dados[i]-1]}" alt="imgDado"></li>`
-        console.log(dados[i])
         let li = document.createElement('li')
         li.innerHTML = resultadoFim
         listaImagens.append(li)
