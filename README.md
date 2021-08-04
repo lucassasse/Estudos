@@ -1,6 +1,12 @@
 # Estudos
 #### Repositório criado com único intuito de estudar e testar coisas novas, sem qualquer projeto em específico.
 
+- **buscador_de_letras_de_musicas**
+
+Aplicação criada com intuito de estudar o consumo de uma API externa, assim como Async e Await.
+
+Neste caso, fora utilizada a API Lyrics Search, onde o usuário informa o nome do artista e o nome da música nos campos apropriados e, ao confirmar, obtém a letra correspondente.
+
 - **calculadora_simples:**
 
 Calculadora simples, onde o usuário digita dois valores e seleciona a operação que deseja (adição, subtração, multiplicação ou divisão).
@@ -73,7 +79,7 @@ O jogo "Torre de Hanói", consiste em passar todos os discos de um torre para ou
 
 - **verificador_de_cep:**
 
-Aplicação criada com intuito de estudar o consumo de uma API externa.
+Aplicação criada com intuito de estudar o consumo de uma API externa, assim como Promises.
 
 Neste caso, fora utilizada a API ViaCep, onde o usuário informa o CEP no campo apropriado e, ao confirmar, obtém o endereço correspondente ao mesmo.
 
