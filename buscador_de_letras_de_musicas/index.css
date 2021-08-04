@@ -59,3 +59,12 @@ input{
     border-radius: 3px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
 }
+
+div.info_musica{
+    display: flex;
+    justify-content: space-around;
+}
+
+p.negrito{
+    font-weight: bold;
+}

@@ -21,7 +21,9 @@ function atribuirCampos(data){
 
 const artista = document.querySelector("#inputArtista");
 const musica = document.querySelector("#inputMusica");
-const letra = document.querySelector("#letra");
+const letra = document.querySelector("#letraSaida");
+const artistaSaida = document.querySelector("#artistaSaida");
+const musicaSaida = document.querySelector("#musicaSaida");
 
 function buscarConteudo(artista, musica){
     return fetch(`https://api.vagalume.com.br/search.php?art=${artista}&mus=${musica}&apikey={key}`);
@@ -32,8 +34,11 @@ async function buscarLetra(){
     
     try {
         const musicaResposta = await buscarConteudo(artista.value, musica.value);
+        limparConsole();
         const data = await musicaResposta.json();
         if(data.mus[0].text){
+            artistaSaida.innerHTML = data.art.name;
+            musicaSaida.innerHTML = data.mus[0].name;
             letra.innerHTML = data.mus[0].text;
         } else{
             letra.innerHTML = data.error;
@@ -41,4 +46,9 @@ async function buscarLetra(){
     } catch (err){
         console.log(err);
     }
+}
+
+function limparConsole(){
+    artista.value = "";
+    musica.value = "";
 }
