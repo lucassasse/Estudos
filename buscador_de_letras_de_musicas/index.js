@@ -23,7 +23,7 @@ const artista = document.querySelector("#inputArtista");
 const musica = document.querySelector("#inputMusica");
 const letra = document.querySelector("#letra");
 
-function buscarLetra(artista, musica){
+function buscarConteudo(artista, musica){
     return fetch(`https://api.vagalume.com.br/search.php?art=${artista}&mus=${musica}&apikey={key}`);
 }
 
@@ -31,7 +31,7 @@ async function buscarLetra(){
     letra.innerHTML = `<div class="text-center"><div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div></div>`
     
     try {
-        const musicaResposta = await buscarLetra(artista.value, musica.value);
+        const musicaResposta = await buscarConteudo(artista.value, musica.value);
         const data = await musicaResposta.json();
         if(data.mus[0].text){
             letra.innerHTML = data.mus[0].text;
