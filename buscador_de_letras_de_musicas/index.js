@@ -1,4 +1,4 @@
-//.then
+//.then()
 
 /* const artista = document.querySelector("#inputArtista");
 const musica = document.querySelector("#inputMusica");
