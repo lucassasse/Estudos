@@ -15,7 +15,7 @@ function consultarCEP(){
     let url = `https://viacep.com.br/ws/${inputCEP.value}/json/`;
 
     fetch(url)
-        .then(response => { return response.json() })
+        .then(response => response.json())
         .then(data => atribuirCampos(data))
         .catch(() => { alert("Ops, alguma coisa estranha aconteceu. Tente novamente!") })
         
