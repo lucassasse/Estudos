@@ -16,6 +16,5 @@ function sortearCor(){
 
 function play(){
     contador ++;
-    console.log(contador)
     sortearCor();
 }
