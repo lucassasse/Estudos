@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    color: red;
+    margin-top:50px;
+    padding: 10px 50px;
+    border: 1px solid red;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    border-color: green;
+    color: green;
+}
+
+div.campo{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 1px;
+  }
+  
+div#verde{
+    border-top-left-radius: 100px;
+    background-color: rgba(0, 128, 0, 0.2);
+    border-color: green;
+}
+
+div#verde:hover{
+    cursor: pointer;
+    background-color: rgba(0, 128, 0, 0.6);
+}
+
+div#verde.pisca{
+    background-color: rgba(0, 128, 0, 0.6);
+}
+  
+div#vermelho{
+    border-top-right-radius: 100px;
+    background-color: rgba(255, 0, 0, 0.2);
+    border-color: red;
+}
+
+div#vermelho:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+div#vermelho.pisca{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+  
+div#azul{
+    border-bottom-left-radius: 100px;
+    background-color: rgba(0, 0, 255, 0.2);
+    border-color: blue;
+}
+
+div#azul:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.6);
+}
+
+div#azul.pisca{
+    background-color: rgba(0, 0, 255, 0.6);
+}
+  
+div#amarelo{
+    border-bottom-right-radius: 100px;
+    background-color: rgba(255, 255, 0, 0.2);
+    border-color: yellow;
+}
+
+div#amarelo:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+div#amarelo.pisca{
+    background-color: rgba(255, 255, 0, 0.5);
+}
