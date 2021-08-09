@@ -22,13 +22,51 @@ function play(){
 }
 
 function sortearCor(){
-    jogoAtual.push(Math.floor(Math.random() * 0));
+    jogoAtual.push(Math.floor(Math.random() * 1));
     console.log(jogoAtual);
-    piscarCor();
+    
+    setTimeout(() => {
+        chamaPiscar();
+    },300)
 }
 
-function piscarCor(){
-    
+let pos = 0;
+function chamaPiscar(){
+    piscar(pos);
+
+    setTimeout(() => {
+        if(jogoAtual.length > pos){
+            chamaPiscar(pos);
+            pos++;
+        } else{
+            pos = 0;
+        }
+    }, 600)
+}
+
+async function piscar(pos){
+
+    if(jogoAtual[pos] === 0){
+        campoVerde.classList.add('pisca');
+    } else if(jogoAtual[pos] === 1){
+        campoVermelho.classList.add('pisca');
+    } else if(jogoAtual[pos] === 2){
+        campoAzul.classList.add('pisca');
+    } else{
+        campoAmarelo.classList.add('pisca');
+    }
+
+    await setTimeout(() => {
+        if(jogoAtual[pos] === 0){
+            campoVerde.classList.remove('pisca');
+        } else if(jogoAtual[pos] === 1){
+            campoVermelho.classList.remove('pisca');
+        } else if(jogoAtual[pos] === 2){
+            campoAzul.classList.remove('pisca');
+        } else{
+            campoAmarelo.classList.remove('pisca');
+        }
+    }, 600)
 }
 
 function selecionarCor(valor){

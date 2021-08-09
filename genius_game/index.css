@@ -62,7 +62,7 @@ button#verde:hover{
 }
 
 button#verde.pisca{
-    background-color: rgba(0, 128, 0, 0.7);
+    background-color: rgba(0, 128, 0, 0.8);
 }
   
 button#vermelho{
@@ -77,7 +77,7 @@ button#vermelho:hover{
 }
 
 button#vermelho.pisca{
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: rgba(255, 0, 0, 0.8);
 }
   
 button#azul{
@@ -92,7 +92,7 @@ button#azul:hover{
 }
 
 button#azul.pisca{
-    background-color: rgba(0, 0, 255, 0.7);
+    background-color: rgba(0, 0, 255, 0.8);
 }
   
 button#amarelo{
@@ -107,5 +107,5 @@ button#amarelo:hover{
 }
 
 button#amarelo.pisca{
-    background-color: rgba(255, 255, 0, 0.7);
+    background-color: rgba(255, 255, 0, 0.8);
 }
