@@ -14,7 +14,7 @@ body {
     background-color: lightgray;
 }
 
-button{
+button.play{
     background-color: rgba(255, 255, 255, 0);
     color: red;
     margin-top:50px;
@@ -24,77 +24,88 @@ button{
     transition: transform .2s;
 }
 
-button:hover{
+button.play:hover{
     cursor: pointer;
     transform: scale(1.2);
     border-color: green;
     color: green;
 }
 
-div.campo{
+button.campo{
     display: inline-block;
     height: 100px;
     width: 100px;
     border: 1px solid black;
     margin: 1px;
-  }
+}
+
+p#pontuacao{
+    background-color: rgba(255, 255, 255, 0);
+    color: blue;
+    padding: 10px 50px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+}
   
-div#verde{
+button#verde{
     border-top-left-radius: 100px;
     background-color: rgba(0, 128, 0, 0.2);
     border-color: green;
 }
 
-div#verde:hover{
+button#verde:hover{
     cursor: pointer;
     background-color: rgba(0, 128, 0, 0.5);
 }
 
-div#verde.pisca{
-    background-color: rgba(0, 128, 0, 0.5);
+button#verde.pisca{
+    background-color: rgba(0, 128, 0, 0.7);
 }
   
-div#vermelho{
+button#vermelho{
     border-top-right-radius: 100px;
     background-color: rgba(255, 0, 0, 0.2);
     border-color: red;
 }
 
-div#vermelho:hover{
+button#vermelho:hover{
     cursor: pointer;
     background-color: rgba(255, 0, 0, 0.5);
 }
 
-div#vermelho.pisca{
-    background-color: rgba(255, 0, 0, 0.5);
+button#vermelho.pisca{
+    background-color: rgba(255, 0, 0, 0.7);
 }
   
-div#azul{
+button#azul{
     border-bottom-left-radius: 100px;
     background-color: rgba(0, 0, 255, 0.2);
     border-color: blue;
 }
 
-div#azul:hover{
+button#azul:hover{
     cursor: pointer;
     background-color: rgba(0, 0, 255, 0.5);
 }
 
-div#azul.pisca{
-    background-color: rgba(0, 0, 255, 0.5);
+button#azul.pisca{
+    background-color: rgba(0, 0, 255, 0.7);
 }
   
-div#amarelo{
+button#amarelo{
     border-bottom-right-radius: 100px;
     background-color: rgba(255, 255, 0, 0.2);
     border-color: yellow;
 }
 
-div#amarelo:hover{
+button#amarelo:hover{
     cursor: pointer;
-    background-color: rgba(255, 255, 0, 0.4);
+    background-color: rgba(255, 255, 0, 0.5);
 }
 
-div#amarelo.pisca{
-    background-color: rgba(255, 255, 0, 0.4);
+button#amarelo.pisca{
+    background-color: rgba(255, 255, 0, 0.7);
 }

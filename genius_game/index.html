@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
+    <script defer src="index.js"></script>
     <title>Genius</title>
 </head>
 <body>
     <div>
-        <div id="verde" class="campo"></div>
-        <div id="vermelho" class="campo"></div>
+        <button id="verde" class="campo" value='0' onclick='selecionarCor(this)'></button>
+        <button id="vermelho" class="campo" value='1' onclick='selecionarCor(this)'></button>
         <br>
-        <div id="azul" class="campo"></div>
-        <div id="amarelo" class="campo"></div>
-      </div>
-      <div>
-          <button onclick="play()">INICIAR</button>
-      </div>
+        <button id="azul" class="campo" value='2' onclick='selecionarCor(this)'></button>
+        <button id="amarelo" class="campo" value='3' onclick='selecionarCor(this)'></button>
+    </div>
+    <div>
+        <button class="play" onclick="play()">INICIAR</button>
+    </div>
+    <div>
+        <p id="pontuacao">Pontuação: 0</p>
+    </div>
 </body>
 </html>
