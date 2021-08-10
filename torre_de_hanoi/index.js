@@ -1,23 +1,39 @@
-
-
-
-
-
-
-
-
-let areas = {
+let torre1 = {
     a: null,
     b: null,
     c: null,
 }
 
-document.querySelectorAll('.item').forEach(item => {
+let torre2 = {
+    a: null,
+    b: null,
+    c: null,
+}
+
+let torre3 = {
+    a: null,
+    b: null,
+    c: null,
+}
+
+document.querySelectorAll('.disco').forEach(item => {
     item.addEventListener('dragstart', dragStart);
     item.addEventListener('dragend', dragEnd);
 });
 
-document.querySelectorAll('.area').forEach(area => {
+document.querySelectorAll('.linha1').forEach(area => {
+    area.addEventListener('dragover', dragOver);
+    area.addEventListener('dragleave', dragLeave);
+    area.addEventListener('drop', drop);
+});
+
+document.querySelectorAll('.linha2').forEach(area => {
+    area.addEventListener('dragover', dragOver);
+    area.addEventListener('dragleave', dragLeave);
+    area.addEventListener('drop', drop);
+});
+
+document.querySelectorAll('.linha3').forEach(area => {
     area.addEventListener('dragover', dragOver);
     area.addEventListener('dragleave', dragLeave);
     area.addEventListener('drop', drop);
@@ -40,7 +56,7 @@ function dragEnd(e){
 //Functions Area
 
 function dragOver(e){
-    if(e.currentTarget.querySelector('.item') === null){
+    if(e.currentTarget.querySelector('.torre') === null){
         e.preventDefault();
         e.currentTarget.classList.add('hover');
     }
@@ -53,8 +69,8 @@ function dragLeave(e){
 function drop(e){
     e.currentTarget.classList.remove('hover');
 
-    if(e.currentTarget.querySelector('.item') === null){
-        let dragItem = document.querySelector('.item.dragging');
+    if(e.currentTarget.querySelector('.disco') === null){
+        let dragItem = document.querySelector('.disco.dragging');
         e.currentTarget.appendChild(dragItem);
 
         updateAreas();
@@ -75,7 +91,7 @@ function dragLeaveNeutral(e){
 function dropNeutral(e){
     e.currentTarget.classList.remove('hover');
 
-    let dragItem = document.querySelector('.item.dragging');
+    let dragItem = document.querySelector('.disco.dragging');
     e.currentTarget.appendChild(dragItem);
 
     updateAreas();
@@ -84,6 +100,27 @@ function dropNeutral(e){
 //Logic Functions
 
 function updateAreas(){
+    document.querySelectorAll('.torre').forEach(torre => {
+        let name = torre.getAttribute('data-name');
+
+        if(torre.querySelector('.disco') !== null){
+            torre1[name] = torre.querySelector('.disco').innerHTML;
+            console.log(torre1)
+        } else {
+            torre1[name] = null;
+        }
+    });
+
+    if(torre1.a === '1' && torre1.b === '2' && torre1.c === '3'){
+        document.querySelector('.torres').classList.add('correct');
+    } else{
+        document.querySelector('.torres').classList.remove('correct');
+    }
+}
+
+
+
+/* function updateAreas(){
     document.querySelectorAll('.area').forEach(area => {
         let name = area.getAttribute('data-name');
 
@@ -99,4 +136,4 @@ function updateAreas(){
     } else{
         document.querySelector('.areas').classList.remove('correct');
     }
-}
+} */

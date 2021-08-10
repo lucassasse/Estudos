@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanban</title>
+    <title>Torre de Hanói</title>
     <link rel="stylesheet" href="index.css">
     <script defer src="index.js"></script>
 </head>
@@ -12,37 +12,31 @@
     <h1>Arrastar e Soltar</h1>
 
     <div class="neutralArea">
-        <div class="disco" draggable="true">1</div>
-        <div class="disco" draggable="true">2</div>
-        <div class="disco" draggable="true">3</div>
+        <div class="disco" id="disco1" draggable="true">1</div>
+        <div class="disco" id="disco2" draggable="true">2</div>
+        <div class="disco" id="disco3" draggable="true">3</div>
     </div>
 
     <div class="torres">
         <div class="torre" id="torre1">
-            <div class="linha3">---</div>
-            <div class="linha2">--</div>
-            <div class="linha1">-</div>
+            <div class="linha3"></div>
+            <div class="linha2"></div>
+            <div class="linha1"></div>
         </div>
     
         <div class="torre" id="torre2">
-            <div class="linha3">---</div>
-            <div class="linha2">--</div>
-            <div class="linha1">-</div>
+            <div class="linha3"></div>
+            <div class="linha2"></div>
+            <div class="linha1"></div>
         </div>
     
         <div class="torre" id="torre3">
-            <div class="linha3">---</div>
-            <div class="linha2">--</div>
-            <div class="linha1">-</div>
+            <div class="linha3"></div>
+            <div class="linha2"></div>
+            <div class="linha1"></div>
         </div>
     </div>
 
-    <!-- <div class="areas">
-        <div class="area" data-name="a"></div>
-        <div class="area" data-name="b"></div>
-        <div class="area" data-name="c"></div>
-    </div> -->
-
-    <!-- <footer>Criado por Lucas Eduardo Sasse</footer> -->
+    <footer>Criado por Lucas Eduardo Sasse</footer>
 </body>
 </html>
