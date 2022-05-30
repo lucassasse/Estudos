@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JackPot - Resgate</title>
+    <link rel="stylesheet" href="estilos/style-geral.css">
+    <link rel="stylesheet" href="estilos/style-resgate.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-top">
+            <a href="index.html"><img src="imagens/imgLogo.png" alt=""></a>
+            
+            <div>
+                <a href="https://www.linkedin.com/in/lucas-eduardo-sasse/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/lucassasse" target="_blank"><ion-icon name="logo-github"></ion-icon></a>  
+            </div>
+            
+        </nav>
+    </header>
+    
+    <nav class="nav-meio">
+        <a href="index.html">INÍCIO</a>
+        <a href="loja.html">LOJA</a>
+        <a href="trofeus.html">TROFÉUS</a>
+        <a href="resgate.html">RESGATAR</a>
+        <a href="contato.html">CONTATO</a>
+    </nav>
+
+    <main>
+        <div id="info">
+            <div id="total">
+                <h2>Informações:</h2>
+                <h3>Total de Fichas:</h3>
+                <p id="fichas">Quantidade de Fichas: 10</p>
+                <h3>Saldo Total:</h3>
+                <p id="saldo">Seu saldo é de R$: 25,00</p>
+            </div>
+            <div id="troca">
+                <h2>Trocar fichas:</h2>
+                <div id="botoes">
+                    <button onclick="trocarFichas(1, 10)">10 fichas = R$ 1,00</button>
+                    <button onclick="trocarFichas(5, 50)">50 fichas = R$ 5,00</button>
+                    <button onclick="trocarFichas(10, 100)">100 fichas = R$ 10,00</button>
+                    <button onclick="trocarFichas(50, 500)">500 fichas = R$ 50,00</button>
+                    <button onclick="trocarFichas(100, 1000)">1000 fichas = R$ 100,00</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="dados">
+            <form action="">
+                <legend>Dados para Resgate:</legend>
+                <label for="value">Valor:</label>
+                <input type="number" placeholder="R$ ...">
+                <label for="name">Nome Completo:</label>
+                <input type="text" placeholder="Nome completo...">
+                <label for="CPF">CPF:</label>
+                <input type="number" placeholder="000.000.000-00">
+                <label for="card">Número do Cartão:</label>
+                <input type="number" placeholder="0000 0000 0000 0000">
+                <label for="agencia">Agência:</label>
+                <input type="number" placeholder="0000">
+                <label for="conta">Conta:</label>
+                <input type="number" placeholder="0000-0">
+
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="localizacao-desenvolvido">
+            <div id="localizacao">
+                <h2>Localização:</h2>
+                <p>Santa Catarina</p>
+                <p>Brasil</p>
+            </div>
+            <div id="contato">
+                <h2>Contato:</h2>
+                <p>E-mail: lucas1sasse@gmail.com</p>
+                <p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5547996127204&text=Ol%C3%A1%2C%20tenho%20a%20seguinte%20d%C3%BAvida%2F%20dica%3A" target="_blank">(47)9 9612-7204</a></p>
+            </div>
+        </div>
+        <div id="desenvolvido">
+            <h2>Desenvolvido por:</h2>
+            <p>Copyright © 2021 <strong>Lucas Eduardo Sasse</strong>.<br>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="index.js" ></script>
+</body>
+</html>

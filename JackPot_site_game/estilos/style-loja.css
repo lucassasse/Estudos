@@ -1,0 +1,56 @@
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(127, 127, 127, 20%);
+    max-width: 1500px;
+    min-height: 500px;
+    margin: 5px auto 0px auto;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+main section#aside-top{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+}
+
+main section#aside-top h2{
+    margin-bottom: 5px;
+}
+
+main section#aside-top p{
+    margin-bottom: 25px;
+}
+
+main section#aside-bottom{
+    margin: 30px auto 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section#aside-bottom h2{
+    margin-bottom: 5px;
+}
+
+main section#aside-bottom div{
+    display: flex;
+    flex-direction: column;
+    margin: 1px solid black;
+}
+
+main section#aside-bottom button{
+    height: 30px;
+    width: 250px;
+    margin: 10px auto 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+main section#aside-bottom button:hover{
+    cursor: pointer;
+    background-color: gray;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}

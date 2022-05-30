@@ -1,0 +1,53 @@
+main{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(127, 127, 127, 20%);
+    max-width: 1500px;
+    height: 500px;
+    margin: 5px auto 0px auto;
+    border: 2px solid gray;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+    background-color: rgba(127, 127, 127, 20%);
+    border: 1px solid gray;
+    margin: 25px 0;
+}
+
+main form h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+main form label{
+    margin: auto;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+
+input, select, textarea{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+textarea{
+    margin-bottom: 1px;
+}
+
+main form button{
+    height: 30px;
+    width: 75px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+main form button:hover{
+    cursor: pointer;
+    background-color: gray;
+}

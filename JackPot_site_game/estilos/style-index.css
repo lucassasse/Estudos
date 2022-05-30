@@ -1,0 +1,53 @@
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(127, 127, 127, 20%);
+    max-width: 1500px;
+    min-height: 500px;
+    margin: 5px auto 0px auto;
+    border: 2px solid gray;
+    align-items: center;
+    text-align: center;
+}
+
+main section#cima {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main section#cima div#quantidade-saldo, div#quantidade-fichas{
+    margin: 30px 30px 0px 30px;
+}
+
+main section#baixo div{
+    margin: 40px 70px 70px 70px;
+}
+
+main section#baixo img#botao-play{
+    width: 150px;
+    border-radius: 70px 75px 30px 30px;
+}
+
+main section#baixo img#botao-play:hover{
+    cursor: pointer;
+}
+
+main section#baixo img#botao-play:active{
+    content: url(../imagens/imgButtonVerde.png);
+}
+
+main section#baixo div#tela-imagens{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+main section#baixo div#tela-imagens img.img{
+    max-height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}

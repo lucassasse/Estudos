@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JackPot - Contato</title>
+    <link rel="stylesheet" href="estilos/style-geral.css">
+    <link rel="stylesheet" href="estilos/style-contato.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-top">
+            <a href="index.html"><img src="imagens/imgLogo.png" alt=""></a>
+            
+            <div>
+                <a href="https://www.linkedin.com/in/lucas-eduardo-sasse/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/lucassasse" target="_blank"><ion-icon name="logo-github"></ion-icon></a>  
+            </div>
+            
+        </nav>
+    </header>
+    
+    <nav class="nav-meio">
+        <a href="index.html">INÍCIO</a>
+        <a href="loja.html">LOJA</a>
+        <a href="trofeus.html">TROFÉUS</a>
+        <a href="resgate.html">RESGATAR</a>
+        <a href="contato.html">CONTATO</a>
+    </nav>
+
+    <main>
+        <form action="">
+            <h2>Formulário para Contato:</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" required>
+            <label for="motivo">Motivo do Contato:</label>
+            <select name="motivo" id="motivo">
+                <option value="selecione" selected disabled>Selecione</option>
+                <option value="duvida">Dúvidas gerais</option>
+                <option value="problema">Relatar problema</option>
+                <option value="sugestão">Sugestão</option>
+                <option value="outros">Outros</option>
+            </select>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="40" rows="8" style="resize: none;"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+            <div id="localizacao-desenvolvido">
+                <div id="localizacao">
+                    <h2>Localização:</h2>
+                    <p>Santa Catarina</p>
+                    <p>Brasil</p>
+                </div>
+                <div id="contato">
+                    <h2>Contato:</h2>
+                    <p>E-mail: lucas1sasse@gmail.com</p>
+                    <p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5547996127204&text=Ol%C3%A1%2C%20tenho%20a%20seguinte%20d%C3%BAvida%2F%20dica%3A" target="_blank">(47)9 9612-7204</a></p>
+                </div>
+            </div>
+            <div id="desenvolvido">
+                <h2>Desenvolvido por:</h2>
+                <p>Copyright © 2021 <strong>Lucas Eduardo Sasse</strong>.<br>Todos os direitos reservados.</p>
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgba(127, 127, 127, 20%);
+    max-width: 1500px;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+header nav.nav-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header img{
+    width: 150px;
+    margin: 10px 30px;
+}
+
+header img:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+header nav div{
+    display: flex;
+    align-items: center;
+}
+
+header ion-icon{
+    width: 40px;
+    height: 40px;
+    padding: 15px 10px;
+    color: black;
+}
+
+header ion-icon:hover{
+    transform: scale(1.12);
+}
+
+/*-------------------------------------*/
+/*-------------------------------------*/
+
+nav.nav-meio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(127, 127, 127, 20%);
+    max-width: 1500px;
+    margin: auto;
+    border: 2px solid gray;
+}
+
+nav.nav-meio a{
+    height: 20px;
+    padding: 5px;
+    margin: 8px 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+
+nav.nav-meio a:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+/*-------------------------------------*/
+/*-------------------------------------*/
+
+footer{
+    
+    background-color: rgba(127, 127, 127, 20%);
+    max-width: 1500px;
+    margin: 5px auto 0px auto;
+    border: 2px solid gray;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+}
+
+footer div{
+    padding: 10px 25px;
+}
+
+footer div#localizacao-desenvolvido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer div#contato p a{
+    color: #34af23;
+    text-decoration: none;
+}
+
+footer div#contato p ion-icon{
+    margin-bottom: -4px;
+    color: #34af23;
+    width: 20px;
+    height: 20px;
+}

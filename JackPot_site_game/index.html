@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style-geral.css">
+    <link rel="stylesheet" href="estilos/style-index.css">
+    <title>JACKPOT</title>
+</head>
+
+<body>
+    
+    <header>
+        <nav class="nav-top">
+            <a href="index.html"><img src="imagens/imgLogo.png" alt=""></a>
+            
+            <div>
+                <a href="https://www.linkedin.com/in/lucas-eduardo-sasse/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/lucassasse" target="_blank"><ion-icon name="logo-github"></ion-icon></a>  
+            </div>
+            
+        </nav>
+    </header>
+    
+    <nav class="nav-meio">
+        <a href="index.html">INÍCIO</a>
+        <a href="loja.html">LOJA</a>
+        <a href="trofeus.html">TROFÉUS</a>
+        <a href="resgate.html">RESGATAR</a>
+        <a href="contato.html">CONTATO</a>
+    </nav>
+
+    <main>
+
+        <section id="cima">
+            <div id="quantidade-saldo">
+                <h2>SALDO</h2>
+                <p id="saldo">Seu saldo é de R$: 25,00</p>
+            </div>
+            <div id="quantidade-fichas">
+                <h2>FICHAS</h2>
+                <p id="fichas">Quantidade de Fichas: 10</p>
+            </div>
+        </section>
+
+        <section id="baixo">
+            <div id="infos">
+                <h2>CAÇA NÍQUEL</h2>
+                <p>Jogar: -1 Fichas</p>
+                <p>Vitória: +10 Fichas</p>
+            </div>
+            <img onclick="cliqueBotao()" id="botao-play" src="imagens/imgButtonVermelho.png" alt="">
+
+            <div id="tela-imagens">
+                <img class="img" src="imagens/imgCereja.png" alt="">
+                <img class="img" src="imagens/imgCereja.png" alt="">
+                <img class="img" src="imagens/imgCereja.png" alt="">
+            </div>  
+        </section>
+        
+    </main>    
+
+    <footer>
+        <div id="localizacao-desenvolvido">
+            <div id="localizacao">
+                <h2>Localização:</h2>
+                <p>Santa Catarina</p>
+                <p>Brasil</p>
+            </div>
+            <div id="contato">
+                <h2>Contato:</h2>
+                <p>E-mail: lucas1sasse@gmail.com</p>
+                <p><a href="https://api.whatsapp.com/send?phone=5547996127204&text=Ol%C3%A1%2C%20tenho%20a%20seguinte%20d%C3%BAvida%2F%20dica%3A" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon> (47)9 9612-7204</a></p>
+            </div>
+        </div>
+        <div id="desenvolvido">
+            <h2>Desenvolvido por:</h2>
+            <p>Copyright © 2021 <strong>Lucas Eduardo Sasse</strong>.<br>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgba(127, 127, 127, 20%);
+    max-width: 1500px;
+    min-height: 500px;
+    margin: 5px auto 0px auto;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+main div#geral{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+main div#geral div.medalha{
+    width: 150px;
+    height: 200px;
+    margin: 80px 30px;
+}
+
+main div#geral div.medalha div.img{
+    background-color: lightgray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(161, 151, 151, 0.555);
+}
+
+main div#geral div.medalha div.img .medalhaFilha{
+    filter: brightness(20%);
+}
+
+main div#geral div.medalha div.p{
+    width: 150px;
+    height: 50px;
+    background-color: grey;
+    color: lightgray;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 3px rgb(161, 151, 151);
+}
+
+main div#geral div.medalha div.img img{
+    width: 100px;
+    height: 150px;
+}
+
+main div#geral div.medalha:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+main div#geral div.medalha div.p p{
+    padding: 7px;
+}
