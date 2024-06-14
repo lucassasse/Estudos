@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Informações Sobre os Ônibus</h1>
-        <select id="routeIdSelect">
-            <option value="" selected disabled>Selecione uma Linha</option>
-            <option value="370482">São Luís</option>
-            <option value="370484">Ouro Verde / Jaraguá 84</option>
-            <option value="370234">Rio Molha</option>
-            <option value="370233">Três Rios</option>
-            <option value="370247">Nereu Ramos</option>
-        </select>
-        <button onclick="getRouteInfo()">Buscar</button>
-        <div id="result"></div>
-        <div id="time"></div>
+    <div class="top">
+        <div class="container">
+            <h1>Informações Sobre os Ônibus</h1>
+            <select id="routeIdSelect">
+                <option value="" selected disabled>Selecione uma Linha</option>
+                <option value="370482">São Luís</option>
+                <option value="370484">Ouro Verde / Jaraguá 84</option>
+                <option value="370234">Rio Molha</option>
+                <option value="370233">Três Rios</option>
+                <option value="370247">Nereu Ramos</option>
+            </select>
+            <button onclick="getRouteInfo()">Buscar</button>
+            <div id="result"></div>
+            <div id="time"></div>
+        </div>
+        <div>
+            <p>Valide seu endereço aqui: <a rel="stylesheet" href="https://cors-anywhere.herokuapp.com/">https://cors-anywhere.herokuapp.com/</a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

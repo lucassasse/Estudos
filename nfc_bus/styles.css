@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     text-align: center;
     background-color: white;
